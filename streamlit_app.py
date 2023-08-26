@@ -78,5 +78,5 @@ if streamlit.button('Get Fruit Load List')  :
 
 fruit_choice1 = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', fruit_choice1)
-
+streamlit.stop()
 my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
